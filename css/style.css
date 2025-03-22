@@ -1,0 +1,264 @@
+/*=============================================
+=            Shared Style            =
+=============================================*/
+:root {
+  --animated-word-width: 120px;
+}
+
+nav,
+header,
+section {
+  font-family: "Montserrat", sans-serif;
+}
+
+.inner-shadow {
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+}
+
+.underlined-title::after {
+  content: "";
+  background-image: url("../assets/images/dots.png");
+  background-repeat: repeat-x;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+section {
+  padding: 100px 170px;
+}
+
+/*=====  End of Shared Style  ======*/
+
+/*=============================================
+=            Home Section comment block            =
+=============================================*/
+header .home-bg {
+  background-image: url("../assets/images/bg.jpg");
+  background-position: 0px 0px;
+  background-size: cover;
+}
+
+header.home .text .animated-title .animated-word1 {
+  width: 0px;
+  --animated-word-width: 120px;
+  overflow: hidden;
+  display: inline-block;
+  animation-name: words-swapping;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+
+header.home .text .animated-title .animated-word2 {
+  width: 0px;
+  --animated-word-width: 110px;
+  overflow: hidden;
+  display: inline-block;
+  animation-name: words-swapping;
+  animation-duration: 12s;
+  animation-delay: 4s;
+  animation-iteration-count: infinite;
+}
+
+header.home .text .animated-title .animated-word3 {
+  width: 0px;
+  --animated-word-width: 140px;
+  overflow: hidden;
+  display: inline-block;
+  animation-name: words-swapping;
+  animation-duration: 12s;
+  animation-delay: 8s;
+  animation-iteration-count: infinite;
+  white-space: nowrap;
+}
+
+@keyframes words-swapping {
+  0% {
+    border-right: #fff 2px solid;
+    width: 0px;
+  }
+  10% {
+    width: var(--animated-word-width);
+  }
+  25%,
+  30% {
+    width: 0px;
+  }
+  40% {
+    width: 0px;
+  }
+  50% {
+    width: 0px;
+  }
+  60% {
+    width: 0px;
+  }
+  70% {
+    width: 0px;
+  }
+  80% {
+    width: 0px;
+  }
+  90% {
+    width: 0px;
+  }
+  100% {
+    width: 0px;
+    border: 0px;
+  }
+}
+
+/*=====  End of Home Section comment block  ======*/
+
+/*=============================================
+=            About Section comment block            =
+=============================================*/
+
+section.about .image-dots {
+  position: relative;
+}
+
+section.about .image-dots::before {
+  content: "";
+  background-image: url("../assets/images/dots.png");
+  background-repeat: repeat;
+  height: 80%;
+  width: 80%;
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  z-index: -1;
+}
+/* section.about .dots {
+  background-image: url("../assets/images/dots.png");
+  background-repeat: repeat;
+  height: 70%;
+  width: 70%;
+  position: absolute;
+  bottom: -30px;
+  left: -20px;
+  z-index: -1;
+} */
+section.about .progress {
+  height: fit-content;
+}
+
+section.about button.download:hover {
+  color: black;
+  background-color: #f0f0f0;
+  border: 1px black solid;
+}
+
+/*=====  End of About Section comment block  ======*/
+
+/*=============================================
+=            Services Section comment block            =
+=============================================*/
+section.services {
+  background-color: rgb(247, 247, 247);
+}
+section.services .card .circle {
+  width: 60px;
+  background-color: #f0f0f0;
+  aspect-ratio: 1/1;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+section.services .card:hover .circle {
+  color: white;
+  background-color: black;
+}
+
+/*=====  End of Services Section comment block  ======*/
+
+/*=============================================
+=            Portfolio Section comment block            =
+=============================================*/
+section.portfolio {
+}
+section.portfolio ul.nav li.nav-item button {
+  color: black;
+  background-color: transparent;
+}
+
+section.portfolio ul.nav li.nav-item button.active::after {
+  content: "";
+  display: flex;
+  border-bottom: black 3px solid;
+  animation: active-underline 0.7s;
+  -webkit-animation: active-underline 0.7s;
+}
+
+@keyframes active-underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+section.portfolio .image {
+}
+
+section.portfolio .image .layer {
+  width: 95%;
+  height: 95%;
+  opacity: 0;
+  gap: 30px;
+  transform: translate(-50%, -30%);
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transform: translate(-50%, -30%);
+  -moz-transform: translate(-50%, -30%);
+  -ms-transform: translate(-50%, -30%);
+  -o-transform: translate(-50%, -30%);
+}
+section.portfolio .image:hover .layer {
+  opacity: 1;
+  gap: 0px;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+section.portfolio .image .layer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.portfolio .image .layer a.circle {
+  color: white;
+  background-color: black;
+  width: 30px;
+  aspect-ratio: 1/1;
+}
+section.portfolio .image .layer a.circle i {
+  font-size: 0.7rem;
+}
+section.portfolio .image .layer a.circle:hover {
+  color: black;
+  background-color: white;
+  border: 1px black solid;
+}
+
+section.portfolio .carousel-control-prev-icon {
+  position: absolute;
+  left: -30vw;
+}
+section.portfolio .carousel-control-next-icon {
+  position: absolute;
+  right: -30vw;
+}
+
+/*=====  End of Portfolio Section comment block  ======*/
