@@ -454,6 +454,10 @@ section.contact form textarea:focus {
   outline: 0px;
 }
 
+main section.about .container {
+  width: 90%;
+}
+
 /* section.contact form input.btn {
 } */
 
