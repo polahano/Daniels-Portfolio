@@ -23,6 +23,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
     <script
       defer
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -93,11 +94,11 @@
           class="text text-white d-flex flex-column min-vh-100 justify-content-center align-items-center"
         >
           <span class="hello fs-50" style="font-weight: 800">Hello</span>
-          <p class="animated-title fs-60 mb-5">
-            <span class="static">I am</span>
-            <span class="animated-word1 align-bottom">Developer </span>
-            <span class="animated-word2 align-bottom">Designer </span>
-            <span class="animated-word3 align-bottom">Larry Daniels</span>
+          <p class="animated-title mb-5">
+            <span class="static fs-1">I am</span>
+            <span class="animated-word1 align-bottom fs-1">Developer </span>
+            <span class="animated-word2 align-bottom fs-1">Designer </span>
+            <span class="animated-word3 align-bottom fs-1">Larry Daniels</span>
           </p>
           <ul class="icons d-flex gap-1 list-unstyled d-flex gap-2">
             <li>
@@ -154,8 +155,8 @@
     >
       <section class="about" id="about">
         <div class="container">
-          <div class="row g-md-4">
-            <div class="col-5 position-relative">
+          <div class="row g-lg-4 g-5">
+            <div class="col-lg-5 col-12 position-relative gx-sm-0 gx-lg-5">
               <div class="image-dots">
                 <img
                   src="./assets/images/hero.jpg"
@@ -166,7 +167,7 @@
 
               <!-- <div class="dots"></div> -->
             </div>
-            <div class="col-7">
+            <div class="col-lg-7 col-12 pt-3 pt-lg-0 px-0">
               <h2 class="fs-2 fw-800">About Me.</h2>
               <h3
                 class="fs-14 mb-4 text-secondary text-uppercase"
@@ -252,10 +253,10 @@
         </div>
       </section>
       <section class="services bg-gray" id="services">
-        <div class="container d-flex flex-column align-items-center">
+        <div class="container-fluid d-flex flex-column align-items-center">
           <h2 class="underlined-title position-relative">Services.</h2>
-          <div class="row g-md-4">
-            <div class="col-4">
+          <div class="row gy-3 g-lg-4">
+            <div class="col-lg-4 col-12 gx-0 gx-lg-4">
               <div
                 class="card shadow border-0 d-flex flex-column justify-content-center align-items-center gap-2 p-5"
               >
@@ -271,7 +272,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-12 gx-0 gx-lg-4">
               <div
                 class="card shadow border-0 d-flex flex-column justify-content-center align-items-center gap-2 p-5"
               >
@@ -287,7 +288,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-12 gx-0 gx-lg-4">
               <div
                 class="card shadow border-0 d-flex flex-column justify-content-center align-items-center gap-2 p-5"
               >
@@ -303,7 +304,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-12 gx-0 gx-lg-4">
               <div
                 class="card shadow border-0 d-flex flex-column justify-content-center align-items-center gap-2 p-5"
               >
@@ -319,7 +320,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-12 gx-0 gx-lg-4">
               <div
                 class="card shadow border-0 d-flex flex-column justify-content-center align-items-center gap-2 p-5"
               >
@@ -335,7 +336,7 @@
                 </p>
               </div>
             </div>
-            <div class="col-4">
+            <div class="col-lg-4 col-12 gx-0 gx-lg-4">
               <div
                 class="card shadow border-0 d-flex flex-column justify-content-center align-items-center gap-2 p-5"
               >
@@ -355,7 +356,7 @@
         </div>
       </section>
       <section class="portfolio" id="portfolio">
-        <div class="container d-flex flex-column align-items-center">
+        <div class="container d-flex flex-column align-items-center gx-0">
           <h2 class="underlined-title position-relative">Portfolio.</h2>
           <br />
           <ul class="nav nav-pills mb-5" id="pills-tab" role="tablist">
@@ -416,7 +417,7 @@
               </button>
             </li>
           </ul>
-          <div class="tab-content container" id="pills-tabContent">
+          <div class="tab-content container gx-0" id="pills-tabContent">
             <div
               class="tab-pane fade show active"
               id="all"
@@ -424,9 +425,9 @@
               aria-labelledby="all-tab"
               tabindex="0"
             >
-              <div class="container-fluid">
-                <div class="portfolio-gallery row g-md-4">
-                  <div class="col-md-4" id="portfolio-1">
+              <div class="container-fluid gx-0">
+                <div class="portfolio-gallery row g-md-4 gx-0 gy-3">
+                  <div class="col-lg-4 col-md-6" id="portfolio-1">
                     <div>
                       <div class="image position-relative">
                         <img
@@ -455,7 +456,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4" id="portfolio-2">
+                  <div class="col-lg-4 col-md-6" id="portfolio-2">
                     <div>
                       <div class="image position-relative">
                         <img
@@ -484,7 +485,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4" id="portfolio-3">
+                  <div class="col-lg-4 col-md-6" id="portfolio-3">
                     <div>
                       <div class="image position-relative">
                         <img
@@ -513,7 +514,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4" id="portfolio-4">
+                  <div class="col-lg-4 col-md-6" id="portfolio-4">
                     <div>
                       <div class="image position-relative">
                         <img
@@ -542,7 +543,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4" id="portfolio-5">
+                  <div class="col-lg-4 col-md-6" id="portfolio-5">
                     <div>
                       <div class="image position-relative">
                         <img
@@ -571,7 +572,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4" id="portfolio-6">
+                  <div class="col-lg-4 col-md-6" id="portfolio-6">
                     <div>
                       <div class="image position-relative">
                         <img
@@ -610,9 +611,9 @@
               aria-labelledby="brand-tab"
               tabindex="0"
             >
-              <div class="container-fluid">
-                <div class="portfolio-gallery row g-md-4">
-                  <div class="col-md-4" id="portfolio-4">
+              <div class="container-fluid gx-0">
+                <div class="portfolio-gallery row g-md-4 gx-0 gy-3">
+                  <div class="col-lg-4 col-md-6" id="portfolio-4">
                     <div>
                       <div class="image position-relative">
                         <img
@@ -641,7 +642,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4" id="portfolio-6">
+                  <div class="col-lg-4 col-md-6" id="portfolio-6">
                     <div>
                       <div class="image position-relative">
                         <img
@@ -680,9 +681,9 @@
               aria-labelledby="design-tab"
               tabindex="0"
             >
-              <div class="container-fluid">
-                <div class="portfolio-gallery row g-md-4">
-                  <div class="col-md-4" id="portfolio-2">
+              <div class="container-fluid gx-0">
+                <div class="portfolio-gallery row g-md-4 gx-0 gy-4">
+                  <div class="col-lg-4 col-md-6" id="portfolio-2">
                     <div>
                       <div class="image position-relative">
                         <img
@@ -711,7 +712,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4" id="portfolio-5">
+                  <div class="col-lg-4 col-md-6" id="portfolio-5">
                     <div>
                       <div class="image position-relative">
                         <img
@@ -750,9 +751,9 @@
               aria-labelledby="graphic-tab"
               tabindex="0"
             >
-              <div class="container-fluid">
-                <div class="portfolio-gallery row g-md-4">
-                  <div class="col-md-4" id="portfolio-1">
+              <div class="container-fluid gx-0">
+                <div class="portfolio-gallery row g-md-4 gx-0 gy-4">
+                  <div class="col-lg-4 col-md-6" id="portfolio-1">
                     <div>
                       <div class="image position-relative">
                         <img
@@ -781,7 +782,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4" id="portfolio-3">
+                  <div class="col-lg-4 col-md-6" id="portfolio-3">
                     <div>
                       <div class="image position-relative">
                         <img
@@ -810,7 +811,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-4" id="portfolio-5">
+                  <div class="col-lg-4 col-md-6" id="portfolio-5">
                     <div>
                       <div class="image position-relative">
                         <img
@@ -853,7 +854,7 @@
           aria-labelledby="picLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog">
+          <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div id="carousel1" class="carousel slide">
                 <div class="carousel-inner">
@@ -936,7 +937,7 @@
           aria-labelledby="picLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog">
+          <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div id="carousel2" class="carousel slide">
                 <div class="carousel-inner">
@@ -1020,7 +1021,7 @@
           aria-labelledby="picLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog">
+          <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div id="carousel3" class="carousel slide">
                 <div class="carousel-inner">
@@ -1103,7 +1104,7 @@
           aria-labelledby="picLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog">
+          <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div id="carousel4" class="carousel slide">
                 <div class="carousel-inner">
@@ -1186,7 +1187,7 @@
           aria-labelledby="picLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog">
+          <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div id="carousel5" class="carousel slide">
                 <div class="carousel-inner">
@@ -1269,7 +1270,7 @@
           aria-labelledby="picLabel"
           aria-hidden="true"
         >
-          <div class="modal-dialog">
+          <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div id="carousel6" class="carousel slide">
                 <div class="carousel-inner">
@@ -1346,9 +1347,11 @@
         </div>
       </section>
       <section class="testimonials bg-gray" id="testimonials">
-        <div class="container d-flex flex-column align-items-center">
+        <div
+          class="container d-flex flex-column align-items-center overflow-hidden"
+        >
           <h2 class="underlined-title position-relative">Testimonials.</h2>
-          <div class="carousel-container w-75">
+          <div class="carousel-container w-100">
             <div id="carouselExampleCaptions" class="carousel slide">
               <div class="carousel-inner overflow-visible">
                 <div class="carousel-item active">
@@ -1441,7 +1444,7 @@
       </section>
       <section class="numbers" id="numbers">
         <div
-          class="counters-container d-flex flex-column flex-md-row justify-content-md-around"
+          class="counters-container d-flex flex-column flex-lg-row justify-content-lg-around gap-3 gap-lg-0"
         >
           <div class="counter d-flex flex-column align-items-center">
             <i class="fa-2x fa-solid fa-users-line"></i>
@@ -1466,11 +1469,11 @@
         </div>
       </section>
       <section class="team bg-gray" id="team">
-        <div class="container d-flex flex-column align-items-center">
+        <div class="container d-flex flex-column align-items-center gx-0">
           <h2 class="underlined-title position-relative">Our Team.</h2>
-          <div class="container-fluid">
-            <div class="portfolio-gallery row g-md-4">
-              <div class="col-md-4">
+          <div class="container-fluid gx-0">
+            <div class="portfolio-gallery row g-md-4 gx-0 gy-3">
+              <div class="col-12 col-md-6 col-lg-4">
                 <div class="team-member">
                   <div class="image position-relative overflow-hidden">
                     <img
@@ -1506,7 +1509,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-12 col-md-6 col-lg-4">
                 <div class="team-member">
                   <div class="image position-relative overflow-hidden">
                     <img
@@ -1542,7 +1545,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-12 col-md-6 col-lg-4">
                 <div class="team-member">
                   <div class="image position-relative overflow-hidden">
                     <img
@@ -1583,12 +1586,14 @@
         </div>
       </section>
       <section class="contact" id="contact">
-        <div class="container d-flex flex-column align-items-center">
+        <div
+          class="container d-flex flex-column align-items-center gx-0 gx-lg-1"
+        >
           <h2 class="underlined-title position-relative">Contact Us.</h2>
-          <div class="container-fluid">
-            <div class="row px-5">
+          <div class="container-fluid gx-0 gx-md-1 gx-lg-5">
+            <div class="row px-md-5 px-lg-0">
               <div
-                class="card-info col-md-4 d-flex flex-column align-items-center gap-md-2"
+                class="card-info col-12 col-lg-4 d-flex flex-column align-items-center mb-4 mb-lg-0 gap-md-2"
               >
                 <div
                   class="circle rounded-circle d-flex justify-content-center align-items-center"
@@ -1601,7 +1606,7 @@
                 </p>
               </div>
               <div
-                class="card-info col-md-4 d-flex flex-column align-items-center gap-md-2"
+                class="card-info col-12 col-lg-4 d-flex flex-column align-items-center mb-4 mb-lg-0 gap-md-2"
               >
                 <div
                   class="circle rounded-circle d-flex justify-content-center align-items-center"
@@ -1614,7 +1619,7 @@
                 </p>
               </div>
               <div
-                class="card-info col-md-4 d-flex flex-column align-items-center gap-md-2"
+                class="card-info col-12 col-lg-4 d-flex flex-column align-items-center mb-4 mb-lg-0 gap-md-2"
               >
                 <div
                   class="circle rounded-circle d-flex justify-content-center align-items-center"
@@ -1627,28 +1632,32 @@
             </div>
             <br />
             <br />
-            <div class="row px-5">
+            <div class="row gx-0 gx-md-1">
               <form action="">
-                <div class="container-fluid">
-                  <div class="row">
-                    <div class="col-md-6">
+                <div class="container-fluid gx-0 gx-md-1">
+                  <div class="row gy-md-0">
+                    <div class="col-12 col-lg-6">
+                      <label for="name"></label>
                       <input
                         type="text"
+                        id="name"
                         class="name w-100 border border-0 rounded-2 py-1 px-2"
                         placeholder="Name"
                       />
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-12 col-lg-6">
+                      <label for="email"></label>
                       <input
                         type="email"
+                        id="email"
                         class="mail w-100 border border-0 rounded-2 py-1 px-2"
                         placeholder="Email"
                       />
                     </div>
                   </div>
-                  <br />
                   <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-12">
+                      <label for="message"></label>
                       <textarea
                         name="message"
                         id="message"
@@ -1674,7 +1683,7 @@
     </main>
     <footer class="" style="background-color: #1c1c1c">
       <div class="container text-center">
-        <p class="text-white-50 p-4 mb-0">
+        <p class="text-white-50 p-4 mb-0 fs-14">
           CopyRight 2018 © By Daniels All Rights Reserved
         </p>
       </div>

@@ -1,0 +1,38 @@
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+  section.portfolio .carousel-control-prev-icon {
+    position: absolute;
+    left: -30vw;
+  }
+  section.portfolio .carousel-control-next-icon {
+    position: absolute;
+    right: -30vw;
+  }
+
+  section {
+    padding: 8% 3%;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  header.home .text .animated-title .animated-word1 {
+    --animated-word-width: 15rem;
+  }
+
+  header.home .text .animated-title .animated-word2 {
+    --animated-word-width: 14rem;
+  }
+
+  header.home .text .animated-title .animated-word3 {
+    --animated-word-width: 18rem;
+  }
+
+  section {
+    padding: 8% 8%;
+  }
+
+  section.contact div.container {
+    width: 75%;
+  }
+}
